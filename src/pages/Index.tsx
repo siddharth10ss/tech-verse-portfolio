@@ -7,10 +7,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Research from "@/components/Research";
 import Certifications from "@/components/Certifications";
-import Blog from "@/components/Blog";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
-import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -26,9 +23,6 @@ const Index = () => {
         <Projects />
         <Research />
         <Certifications />
-        <Testimonials />
-        <Blog />
-        <Newsletter />
         <Contact />
         <Footer />
       </div>
