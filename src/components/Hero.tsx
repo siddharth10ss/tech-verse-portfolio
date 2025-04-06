@@ -2,6 +2,7 @@
 import { ArrowRight, Download, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 
 export default function Hero() {
   return (
@@ -48,14 +49,19 @@ export default function Hero() {
           </div>
           
           <div className="hidden md:flex justify-center items-center">
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+            <div className="relative w-72 h-72 lg:w-80 lg:h-80">
               {/* Profile Image Container with Decorative Elements */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse" />
               <div className="absolute inset-2 rounded-full overflow-hidden border-2 border-primary/50">
-                {/* Replace with your actual image */}
-                <div className="w-full h-full bg-secondary/50 flex items-center justify-center text-muted-foreground">
-                  Profile Image
-                </div>
+                {/* Your profile image */}
+                <Avatar className="w-full h-full">
+                  <AvatarImage 
+                    src="/lovable-uploads/72f7ba8f-8565-480d-b7e6-640541174ecc.png" 
+                    alt="Siddharth S" 
+                    className="object-cover"
+                  />
+                  <AvatarFallback className="text-xl">SS</AvatarFallback>
+                </Avatar>
               </div>
               
               {/* Decorative Tech Labels */}
