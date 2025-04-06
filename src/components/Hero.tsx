@@ -1,4 +1,3 @@
-
 import { ArrowRight, Download, Github } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
@@ -54,14 +53,11 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 animate-pulse" />
               <div className="absolute inset-2 rounded-full overflow-hidden border-2 border-primary/50">
                 {/* Your profile image */}
-                <Avatar className="w-full h-full">
-                  <AvatarImage 
-                    src="/lovable-uploads/72f7ba8f-8565-480d-b7e6-640541174ecc.png" 
-                    alt="Siddharth S" 
-                    className="object-cover"
-                  />
-                  <AvatarFallback className="text-xl">SS</AvatarFallback>
-                </Avatar>
+                <img 
+                  src="/lovable-uploads/72f7ba8f-8565-480d-b7e6-640541174ecc.png" 
+                  alt="Siddharth S" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               {/* Decorative Tech Labels */}
