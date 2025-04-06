@@ -1,8 +1,6 @@
 
-import { ExternalLink, Github } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
 
 type Project = {
   title: string;
@@ -118,34 +116,6 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              {project.links && (
-                <CardFooter className="pt-3 flex gap-2">
-                  {project.links.github && (
-                    <Button asChild variant="outline" size="sm">
-                      <a 
-                        href={project.links.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-4 w-4 mr-1" />
-                        GitHub
-                      </a>
-                    </Button>
-                  )}
-                  {project.links.demo && (
-                    <Button asChild size="sm">
-                      <a 
-                        href={project.links.demo} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="h-4 w-4 mr-1" />
-                        Live Demo
-                      </a>
-                    </Button>
-                  )}
-                </CardFooter>
-              )}
             </Card>
           ))}
         </div>

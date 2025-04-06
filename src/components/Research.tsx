@@ -1,7 +1,6 @@
 
-import { ExternalLink, FileText } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { Button } from "./ui/button";
+import { FileText } from "lucide-react";
+import { Card, CardContent, CardHeader } from "./ui/card";
 
 const publications = [
   {
@@ -33,14 +32,6 @@ export default function Research() {
               <CardContent>
                 <p>{pub.description}</p>
               </CardContent>
-              <CardFooter>
-                <Button asChild variant="outline">
-                  <a href={pub.link} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Read Publication
-                  </a>
-                </Button>
-              </CardFooter>
             </Card>
           ))}
         </div>
