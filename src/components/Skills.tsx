@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Code, Database, Robot, Server, Zap } from "lucide-react";
+import { Code, Database, Bot, Server, Zap } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 type Skill = {
@@ -23,7 +23,7 @@ const skillCategories = [
   {
     id: "aiml",
     label: "AI/ML",
-    icon: <Robot className="mr-2 h-4 w-4" />,
+    icon: <Bot className="mr-2 h-4 w-4" />,
     skills: [
       { name: "TensorFlow", level: 85 },
       { name: "OpenCV", level: 90 },
