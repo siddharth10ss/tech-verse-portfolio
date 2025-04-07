@@ -67,6 +67,12 @@
     --input: 214 32% 91%;
     --ring: 252 95% 70%;
   }
+
+  html {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    min-height: 100%;
+  }
 }
 
 @layer base {
@@ -74,7 +80,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-roboto;
+    @apply bg-background text-foreground font-roboto min-h-screen;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-montserrat;
